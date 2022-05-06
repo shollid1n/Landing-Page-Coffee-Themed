@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Themed Landing Page</title>
+    <style>
+      body {
+        text-align: center;
+        background: linear-gradient(
+          90deg,
+          rgb(186, 128, 78) 0%,
+          rgb(240, 164, 111) 95%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Impact;
+        text-shadow: 5px 5px 10px rgba(171, 70, 29, 0.4);
+        color: #ab461d;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #000;
+        line-height: 20px;
+        font-family: Times;
+        margin-left: 10px;
+        margin-right:10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border: 17px ridge #d7722b;
+        border-radius: 20px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 16px;
+        margin: 12px 0 10px;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 15px 30px;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #061802ad;
+        font-size: larger;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+
+      }
+
+
+
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 7px;
+        border: 1px solid #5f2f14;
+        border-radius:10px;
+        background: #a7b99e;
+        color:#000;
+        font-size: 15px;
+        padding: 5px 24px;
+        box-shadow: 5px 5px; 10px rgba(0, 0, 0, 0.3);
+
+
+
+
+      button:hover {
+        opacity: 0.9;
+        background: #cedcc3;
+        color: #000;
+        border: 1px solid #535a3b;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pumpkin Spice Latte</h1>
+      <h2>
+        <em>A Must Have Drink </em>
+      </h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/030/095/original/pumpkin-spice-latte-1.jpg?1648249167"
+        width="400"
+        alt="Pumpkin latte img"
+      />
+
+      <p>
+        The Pumpkin Spice Latte is a coffee drink made with a mix of traditional
+        autumn spice flavors (cinnamon, nutmeg, and clove), steamed milk,
+        espresso, and often sugar, topped with whipped cream and pumpkin pie
+        spice. The beverage is most commonly associated with Starbucks, which
+        first offered the drink in 2003, and the season of fall. The popular
+        flavor has inspired a wide range of product variations that appear on a
+        seasonal basis. So grab a cup today!
+        <br />
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Pumpkin_Spice_Latte"
+        target="_blank"
+        class="learn-more"
+      >
+        <em>Learn more on Wikipedia</em>
+      </a>
+
+      <hr />
+      <button class="buy-button">Buy Now <br />☕</button>
+      <hr />
+      <p class="footer">
+        This page was built by <br />
+        Shalinda Holliday
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We will email you further payment instructions for your pumpkin spiced latte!☕"
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
